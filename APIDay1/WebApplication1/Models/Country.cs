@@ -17,6 +17,9 @@ namespace WebApplication1.Models
 
     public partial class Country
     {
+        /// <summary>
+        /// country Id
+        /// </summary>
         public decimal id { get; set; }
         public string name { get; set; }
     

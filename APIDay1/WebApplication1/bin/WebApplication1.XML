@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApplication1</name>
+    </assembly>
+    <members>
+        <member name="P:WebApplication1.Models.Country.id">
+            <summary>
+            country Id
+            </summary>
+        </member>
+    </members>
+</doc>

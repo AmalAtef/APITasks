@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,10 @@ namespace WebApplication1
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
+
+            //Return Camel Case
+            config.Formatters.JsonFormatter.SerializerSettings
+                .ContractResolver = new CamelCasePropertyNamesContractResolver();
 
             //Return Json
             config.Formatters.JsonFormatter.MediaTypeMappings.Add(new QueryStringMapping("type", "json", "application/json"));
